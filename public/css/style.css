@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+
+    font-size: 62.5%;
+}
+:root
+{
+    --color-heading:#ADB5BD;
+    --color-btn:#55A630;
+    --color-bgd:#80B918;
+}
+#body-login,#body-signup
+{
+    display:flex;
+    width: 100%;
+}
+#text-login
+{
+    width:50%;
+    background-image:url('./public/assets/Network.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    padding:200px 50px 200px 50px;
+    /* height:200%; */
+}
+#text-login p
+{
+    color:gray;
+}
+#login,#signup
+{
+    width:50%;
+    font-size: 1.5rem;
+    padding-top:100px;
+}
+#body-login h2,#body-signup h2
+{
+    color:var(--color-heading);
+}
+#body-login .title2,#body-signup .title2
+{
+    text-align:center;
+    font-size:2rem;
+}
+#body-login .form,#body-signup .form
+{
+    width:50%;
+    margin:20px auto;
+}
+#body-login a,#body-signup a
+{
+    text-align:center;
+    display:block;
+}
+#body-login input[value="LOGIN"],#body-signup input[value="CREATE ACCOUNT"]
+{
+    margin:10px auto;
+    display:block;
+    background-color:var(--color-btn);
+    color:white;
+    font-weight:bold;
+    width:90%;
+    height:40px;
+    border-radius:50px;
+    border:2px solid var(--color-heading);
+}
+img[src="./public/assets/futur.png"]
+{
+    display:block;
+    margin:10px auto;
+}
+#login input[type="email"],#login input[type="text"],#login input[type="password"],#signup input[type="email"],#signup input[type="text"],#signup input[type="password"]
+{
+    padding:20px;
+}
+#login input[type="email"]::placeholder,#login input[type="text"]::placeholder,#login input[type="password"]::placeholder,#signup input[type="email"]::placeholder,#signup input[type="text"]::placeholder,#signup input[type="password"]::placeholder
+{
+    font-size:2rem;
+}
+input[type="file"]
+{
+    padding:20px;
+}
+
+               /*********** Dashboard *************/
+
+#dashboard header
+{
+    display:flex;
+}
+#dashboard header .first
+{
+    width:15%;
+    background-color:var(--color-btn);
+    color:white;
+    font-weight:bold;
+    font-size:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#dashboard header .second
+{
+    background-color:var(--color-bgd);
+    width:85%;
+    height:100px;
+}
+#dashboard main
+{
+    display:flex;
+}
+#dashboard #profile
+{
+    text-align:center;
+    font-size:2rem;
+    width:15%;
+    background-color:var(--color-heading);
+    padding-top:20px;
+}
+#dashboard #chat
+{
+    width:85%;
+    padding:10px;
+}
+#dashboard a
+{
+    color:black;
+    display:block;
+    margin:10px 0 10px 0;
+}
+#dashboard #chat .me
+{
+    float:right;
+}
+#dashboard #send
+{
+    /* clear:both; */
+}
+#bottom-dashboard
+{
+    display:flex;
+    justify-content:space-around;
+    clear:both;
+}
+#bottom-dashboard input[type="file"]
+{
+    padding:0 !important;
+}
+.friend-line
+{
+    display:flex;
+    width:20%;
+    justify-content:space-between;
+}
+.circle-green
+{
+    background-color:var(--color-btn);
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    position:absolute;
+    top:10px;
+    left:60px;
+}
+.circle-red
+{
+    background-color:red;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    position:absolute;
+    top:10px;
+    left:60px;
+}
+.img-message
+{
+   position:relative; 
+}
+.message-p
+{
+    width:50%;
+    background-color:var(--color-bgd);
+    /* position:absolute;
+    top:100px; */
+}
+.message
+{
+    /* position:relative; */
+}
+.date-me
+{
+    float:right;
+    /* color:red; */
+}
+.me>div>div
+{
+    clear:right;
+    width:80%;
+    margin-left:150px;
+    background-color:gray;
+}
+.me>div
+{
+    width:70%;
+}
+textarea
+{
+    /* display:block; */
+}
